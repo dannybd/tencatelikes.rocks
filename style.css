@@ -1,0 +1,70 @@
+body {
+  background-image: url(img/bg.jpg);
+  bottom: 0;
+  left: 0;
+  margin: 10% 5%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: center;
+}
+
+.block {
+  align-items: center;
+  animation: blockDance 1.5s ease-in-out 0s infinite alternate;
+  display: flex;
+  height: 33%;
+  justify-content: center;
+  margin: 5%;
+  max-height: 200px;
+  max-width: 200px;
+  width: 33%;
+}
+
+@keyframes blockDance {
+  from { transform: rotate(-5deg); }
+  to { transform: rotate(5deg); }
+}
+
+.person {
+  animation-delay: 0.0s;
+}
+
+.likes {
+  animation-delay: 0.5s;
+}
+
+#playpause {
+  opacity: 0.8;
+  pointer-events: none;
+  position: absolute;
+}
+
+.rocks {
+  animation-delay: 1.0s;
+}
+
+.block > img {
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.block > img:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 800px) {
+  main {
+    flex-direction: column;
+  }
+}
+
