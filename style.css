@@ -1,6 +1,7 @@
 body {
   background-image: url(img/bg.jpg);
   bottom: 0;
+  font-size: 150%;
   left: 0;
   margin: 10% 5%;
   position: absolute;
@@ -40,6 +41,7 @@ main {
 
 .likes {
   animation-delay: 0.5s;
+  cursor: pointer;
 }
 
 #playpause {
@@ -50,6 +52,12 @@ main {
 
 .rocks {
   animation-delay: 1.0s;
+}
+
+.reload {
+  cursor: pointer;
+  text-align: center;
+  transform: rotateX(180deg);
 }
 
 .block > img {
